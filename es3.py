@@ -10,7 +10,9 @@ while not cmd == "4":
         num = input("Quale?\t")
         activities.remove(num)
     elif cmd == "3":
-        for i in activities:
-            print(i)
+        print(enumerate(activities))
+        print(activities)
+        for i, j in enumerate(activities):
+            print(i, j)
     elif cmd == "4":
         break
